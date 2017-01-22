@@ -1,4 +1,4 @@
-class People
+class Person
   attr_reader :name
 
   def initialize(name)
@@ -12,13 +12,13 @@ class People
 
 
 
-class Student
+class Student < Person
   def learn
     puts "I get it!"
   end
 end
 
-class Instructor
+class Instructor < Person
   def teach
     puts "Everything in ruby is an object"
   end
@@ -26,3 +26,9 @@ end
 
 
 end
+
+chris = Instructor.new("Chris")
+chris.greeting
+
+cristina = Student.new("Cristina")
+cristina.greeting
