@@ -43,6 +43,7 @@ class System
       @day = day
       @year = year
     end
+  end
 
     class Star < Body
 
@@ -52,6 +53,7 @@ class System
         @type = type
 
       end
+    end
 
       class Moon < Body
 
@@ -61,14 +63,8 @@ class System
           @month = month
           @planet = planet
         end
+      end
 
-
-    end
-
-
-
-
-
-
-
-end
+      sun = Star.new("Sun", 1000000, "G-type")
+      earth = Planet.new("Earth", 100, 24, 365)
+      moon = Moon.new("Moon", 200, 12, "earth.name")
