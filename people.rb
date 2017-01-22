@@ -32,3 +32,8 @@ chris.greeting
 
 cristina = Student.new("Cristina")
 cristina.greeting
+
+chris.teach
+cristina.learn
+
+#cristina.teach does not work because the teach method is not defined in the student class
